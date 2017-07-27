@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Register</h1>
+
+    <Form>
+        <div>
+            <!--Full Name  -->
+            <label for="firstName">First Name: </label>
+            <input id="firstName" name="firstName" type="text" placeholder="John"required>
+
+            <label for="lastName">Last Name: </label>
+            <input id="lastName" name="lastName" type="text" placeholder="Smith" required>
+        </div>
+        
+        <div>
+            <!--Sex Type  -->
+            <label for="male">Male </label>
+            <input name="sexType" id="male" type="radio" value="male">
+
+            <label for="female">Female</label>
+            <input name="sexType" id="female" type="radio" value="female">
+
+            <label for="other">Other</label>
+            <input name="sexType" id="other" type="radio" value="other">
+        </div>
+        
+        <div>
+            <!--Email and Password  -->
+            <label for="email">Email: </label>
+            <input id="email" name="email" type="email" placeholder="your email" required>
+
+            <label for="password">Password: </label>
+            <input id="password" name="password" type="password" pattern=".{5,10}" placeholder="your password" required title="5 to 10 characters">
+        </div>
+
+        <div>
+            <!--Birthday  -->
+            <label for="birthDay">Birthday: </label>
+            <select name="selectMonth" id="month">
+                <option value="" selected>Month:</option>
+                <option value="Jan">Jan</option>
+                <option value="Feb">Feb</option>
+                <option value="Mar">Mar</option>
+                <option value="Apr">Apr</option>
+                <option value="May">May</option>
+                <option value="Jun">Jun</option>
+                <option value="Jul">Jul</option>
+                <option value="Aug">Aug</option>
+                <option value="Sep">Sep</option>
+                <option value="Oct">Oct</option>
+                <option value="Noc">Nov</option>
+                <option value="Dec">Dec</option>
+            </select>
+            <select name="selectDay" id="day">
+                <option value="" selected>Day:</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <select name="selectYear" id="year">
+                <option value="" selected>Year:</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+            </select>
+        </div>    
+        
+        <div>
+            <!--Aggree  -->
+            <label for="checkBox">I agree to the terms and conditions</label>
+            <input id="checkBox" name="checkBox" type="checkbox" required>        
+        </div>        
+
+        <input type="submit">    
+
+    </Form>
+    
+</body>
+</html>
